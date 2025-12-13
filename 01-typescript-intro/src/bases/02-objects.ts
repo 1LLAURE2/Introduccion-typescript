@@ -19,4 +19,11 @@ export const charmander:Pokemon={
     id:4,
     name:'Charmander'
 }
-console.table(bulbasur)
+
+console.table(bulbasur);
+
+export const pokemons:Pokemon[]=[];
+
+pokemons.push(charmander,bulbasur);
+
+console.table(pokemons);
