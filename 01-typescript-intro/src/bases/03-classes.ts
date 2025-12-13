@@ -14,11 +14,26 @@
 // TODO: FORMA CORTA
 export class Pokemon{
 
+    get imageUrl():string{
+        return `https://pokemon.com/${this.id}.jpg`;
+    }
     constructor(
-        public id:number, 
-        public name:string
+        public readonly id:number, 
+        public name:string,
+        // public imageUrl:string
     ){}
+
+    scream(){
+        console.log(`${this.name.toUpperCase()} !!!`);
+    }
+
+    speak(){
+        console.log(`${this.name}, ${this.name}`)
+    }
+
 }
 
 export const charmanderClass = new Pokemon(1,'CHARMANDER');
-console.log(charmanderClass);
+console.table(charmanderClass);
+console.log(charmanderClass.scream());
+console.log(charmanderClass.speak());
