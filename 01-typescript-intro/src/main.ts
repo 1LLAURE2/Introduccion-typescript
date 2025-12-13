@@ -4,10 +4,12 @@ import viteLogo from '/vite.svg'
 import { setupCounter } from './counter.ts'
 
 import { name , age} from './bases/01-types.ts';
+import { pokemonIds,bulbasur} from './bases/02-objects.ts';
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   <div>
-    <h1>Hello ${name} ${age}</h1>
+    <h1>Hello ${name} ${age} ${pokemonIds.join(',')}</h1>
+    <h1>${bulbasur.name}</h1>
     <a href="https://vite.dev" target="_blank">
       <img src="${viteLogo}" class="logo" alt="Vite logo" />
     </a>
