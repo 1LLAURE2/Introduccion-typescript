@@ -3,22 +3,19 @@ import typescriptLogo from './typescript.svg'
 import viteLogo from '/vite.svg'
 import { setupCounter } from './counter.ts'
 
-import { name , age} from './bases/01-types.ts';
-import { pokemonIds,bulbasur,pokemons} from './bases/02-objects.ts';
-import { charmanderClass } from './bases/03-classes.ts';
-import { charmanderInjection } from './bases/04-injection.ts';
+// import { name , age} from './bases/01-types.ts';
+// import { pokemonIds,bulbasur,pokemons} from './bases/02-objects.ts';
+// import { charmanderClass } from './bases/03-classes.ts';
+// import { charmanderInjection } from './bases/04-injection.ts';
+import { charmander } from './bases/05-decoraters.ts';
 
 
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   <div>
-    <h1>Hello ${name} ${age} ${pokemonIds.join(',')}</h1>
-    <h1>${bulbasur.name}</h1>
-    <h1>${pokemons.join(',')}</h1>
-    <h1>03-Classes</h1>
-    <h1>${charmanderClass.name}</h1>
-    <h1>04-Injection</h1>
-    <h2>${charmanderInjection.name}</h2>
+
+    <h1>Hello ${charmander.name} ${charmander.id}</h1>
+
     <a href="https://vite.dev" target="_blank">
       <img src="${viteLogo}" class="logo" alt="Vite logo" />
     </a>
