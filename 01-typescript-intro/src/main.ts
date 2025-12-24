@@ -6,6 +6,8 @@ import { setupCounter } from './counter.ts'
 import { name , age} from './bases/01-types.ts';
 import { pokemonIds,bulbasur,pokemons} from './bases/02-objects.ts';
 import { charmanderClass } from './bases/03-classes.ts';
+import { charmanderInjection } from './bases/04-injection.ts';
+
 
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
@@ -13,7 +15,10 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
     <h1>Hello ${name} ${age} ${pokemonIds.join(',')}</h1>
     <h1>${bulbasur.name}</h1>
     <h1>${pokemons.join(',')}</h1>
+    <h1>03-Classes</h1>
     <h1>${charmanderClass.name}</h1>
+    <h1>04-Injection</h1>
+    <h2>${charmanderInjection.name}</h2>
     <a href="https://vite.dev" target="_blank">
       <img src="${viteLogo}" class="logo" alt="Vite logo" />
     </a>
