@@ -1,18 +1,20 @@
 
 import type { Move, PokeapiResponse } from '../interfaces/pokeapi-response.interface';
-import { PokeApiAdapter, PokeApiFetchAdapter } from '../api/pokeApi.adapter';
+import { PokeApiAdapter, PokeApiFetchAdapter, type HttpAdapter } from '../api/pokeApi.adapter';
 
 export class Pokemon {
     public readonly id: number;
     public name: string;
 
-    private readonly http:PokeApiAdapter;
+    private readonly http:HttpAdapter;
 
     get imageUrl(): string {
         return `https://pokemon.com/${ this.id }.jpg`;
     }
 
-    constructor(id: number, name: string, http:PokeApiAdapter) {
+    constructor(id: number, name: string,
+        // TODO: Inyectar dependencias
+        http:HttpAdapter) {
         this.id = id;
         this.name = name;
         this.http=http;
