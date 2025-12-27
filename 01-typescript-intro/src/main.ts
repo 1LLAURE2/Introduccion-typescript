@@ -7,7 +7,8 @@ import { setupCounter } from './counter.ts'
 // import { pokemonIds,bulbasur,pokemons} from './bases/02-objects.ts';
 // import { charmanderClass } from './bases/03-classes.ts';
 // import { charmanderInjection } from './bases/04-injection.ts';
-import { charmander } from './bases/05-decoraters.ts';
+// import { charmander } from './bases/05-decoraters.ts';
+import { charmander } from './bases/06-decoratores2.ts';
 
 
 
